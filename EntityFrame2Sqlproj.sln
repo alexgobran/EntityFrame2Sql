@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrame2Sqlproj", "EntityFrame2Sqlproj\EntityFrame2Sqlproj.csproj", "{97FDABDF-65CE-452B-88BC-0ABC970BA9B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrame2SqlLib", "EntityFrame2SqlLib\EntityFrame2SqlLib.csproj", "{6C3C6471-5E93-4E31-86F4-4175D0DAD618}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97FDABDF-65CE-452B-88BC-0ABC970BA9B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97FDABDF-65CE-452B-88BC-0ABC970BA9B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97FDABDF-65CE-452B-88BC-0ABC970BA9B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97FDABDF-65CE-452B-88BC-0ABC970BA9B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C3C6471-5E93-4E31-86F4-4175D0DAD618}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C3C6471-5E93-4E31-86F4-4175D0DAD618}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C3C6471-5E93-4E31-86F4-4175D0DAD618}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C3C6471-5E93-4E31-86F4-4175D0DAD618}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5AB151B-1DF2-4D1C-B3D4-96981C166992}
+	EndGlobalSection
+EndGlobal
