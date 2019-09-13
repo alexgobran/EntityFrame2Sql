@@ -6,9 +6,60 @@ namespace EntityFrame2Sqlproj {
     class Program {
         static void Main(string[] args) {
             //always reference the context instance in EF
-            
-            using(var context = new PRSContext()) {
 
+            var requestline = new RequestLine()
+
+            { }
+
+           
+
+
+                
+
+
+
+                var request = new Request()
+                {
+                    Id = 0,
+                    Description = "Office Supplies",
+                    Justification = "My pen doesn't work",
+                    RejectionReason = null,
+                    DeliveryMode = "Amazonprime",
+                    Status = "NEW",
+                    Total = 0,
+                    UserId = 1
+
+
+
+
+                };
+                
+                              
+                               
+                   var success = RequestRepository.Insert(request);
+                   Console.WriteLine($"New Request is {request.Id} {request.Description} {request.Justification} {request.RejectionReason} {request.DeliveryMode} {request.Status} {request.Total} {request.UserId}");
+
+
+                
+
+
+                //var vendorInsert = new Vendor()
+                //{
+                //    Code = "AJG",
+                //    Name = "All Just Gravy",
+                //    Address = "777 Money Lane",
+                //    City = "Cincinnati",
+                //    State = "Ohio",
+                //    Zip = "11111",
+                //    Phone = "513-111-1111",
+                //    Email = "123money@gmail.com",
+
+                    
+
+                //};
+                //context.Vendor.Add(vendorInsert);
+                //context.SaveChanges();
+                //Console.WriteLine($"New Vendor {vendorInsert.Name} has been added to Vendors");
 
                 //var request = new Request() {
                 //    Id = 0,
@@ -47,8 +98,8 @@ namespace EntityFrame2Sqlproj {
 
                 //});
                 //context.SaveChanges();
-                var total = context.Request.Sum(r => r.Total);
-                Console.WriteLine($"Total all requests is {total}");
+                //var total = context.Request.Sum(r => r.Total);
+                //Console.WriteLine($"Total all requests is {total}");
 
 
 
@@ -75,7 +126,7 @@ namespace EntityFrame2Sqlproj {
                 //    {
                 //        Console.WriteLine($"{user.Username} {user.Firstname} {user.Lastname}");
                 //    }
-            }
+            
 
         }
 
